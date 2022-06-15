@@ -1,7 +1,7 @@
 #!/bin/bash
 #zepeak setup
-user=sysgfxe2eval
-passwd="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"
+user=$(cat /root/gituser)
+passwd=$(cat /root/gitpass)
  
 git clone https://$user:$passwd@https://github.com/oneapi-src/level-zero.git
   
@@ -23,5 +23,3 @@ test_loc="/../out/perf_tests"
 ze_peak_path+=$test_loc
 cd $ze_peak_path
 ./ze_peak
-
- 
