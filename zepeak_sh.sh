@@ -2,6 +2,7 @@
 #zepeak setup
 user=sysgfxe2eval
 passwd="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"
+ 
 git clone https://$user:$passwd@https://github.com/oneapi-src/level-zero.git
   
 cd level-zero
@@ -23,3 +24,4 @@ ze_peak_path+=$test_loc
 cd $ze_peak_path
 ./ze_peak
 
+ 
