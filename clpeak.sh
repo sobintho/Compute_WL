@@ -6,6 +6,7 @@ passwd=$(cat /root/gitpass)
 yes | apt-get update --fix-missing
 yes | apt-get update
 yes | apt --fix-broken install
+yes | apt-get install build-essential cmake
 
 git clone https://github.com/krrishnarraj/clpeak.git
 
