@@ -4,7 +4,7 @@ user=$(cat /root/gituser)
 passwd=$(cat /root/gitpass)
  
 git clone https://$user:$passwd@https://github.com/oneapi-src/level-zero.git
-  
+yes | apt-get install build-essential cmake  
 cd level-zero
 mkdir build && cd build
 cmake ..
